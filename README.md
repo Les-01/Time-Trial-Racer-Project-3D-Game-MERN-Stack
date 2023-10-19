@@ -1,11 +1,17 @@
 # COMP3000-Computing-Project-Leslie-Grint-10752013
+
 Final Year BSc Computer Science Project
 
 Student Name : Leslie Grint
+
 Student Number : 10752013 
+
 Supervisor : Dr Amir Aly
+
 Project Title : Web Based Cross Platform 3D Game
+
 Project Vision
+
 The gaming industry as a whole has seen exponential growth over the last decade with over 3 billion people playing video games in 2023, and an estimated global revenue of over 180 billion dollars (Morikawa, 2023). 
 However, with multiple gaming platforms being available for gamers to choose from, such as Steam (Steam Deck/PC), the Windows store (PC/Xbox), the iOS app store (Apple Device) and the Android app store (Android Device) 
 many gamers find themselves segregated from one another in a series of platform locked network pools. In these pools many players can be playing the same games developed by the same companies, but are unable to connect 
