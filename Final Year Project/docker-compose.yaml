@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  backend:
+    build: ./backend
+    container_name: final_year_project_game_backend_container
+    ports:
+      - '9000:9000'
+    volumes:
+      - ./backend:/backend
+      - /backend/node_modules
+  frontend:
+    build: ./frontend
+    container_name: final_year_project_game_frontend_container
+    ports:
+      - '3000:3000'
+    stdin_open: true
+    tty: true

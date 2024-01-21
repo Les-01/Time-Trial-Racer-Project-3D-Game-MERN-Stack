@@ -1,0 +1,2 @@
+# This instruct Docker to ignore the 'mode_modules' folder when COPY'ing as it will run nmp install and install the dependencies anyway.
+node_modules
