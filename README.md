@@ -8,7 +8,7 @@ Student Number : 10752013
 
 Supervisor : Dr Amir Aly
 
-Project Title : Web Based Cross Platform 3D Game
+Project Title : Time Trial Racer - Cross Platform 3D Game
 
 Project Vision
 
