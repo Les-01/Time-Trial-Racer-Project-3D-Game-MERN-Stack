@@ -11,7 +11,6 @@ const NavBar = () => {
     const {logout} = useLogout()
     // This retrieves the 'user' object from 'useAuthorisationContext'
     const {user} = useAuthorisationContext()
-
     // This is the 'logoutBtnHandler' function which executes when the logout button is click.
     const logoutBtnHandler = () => {
         // This is the 'logout' function.
@@ -25,11 +24,9 @@ const NavBar = () => {
                     {/* This is a link component used to navigate to the root URL '/' */}
                     <Link to = "/">
                         {/* This is a H1 heading displaying the text 'Gym Log' */}
-                        <h1>Game</h1>
+                        <h1>Time Trial Racer</h1>
                     </Link>
                 </nav>
-
-
                 {/* Centered Links */}
                 <nav className="centered-links">
                     <Link to="/game">Play Game</Link>
@@ -39,7 +36,6 @@ const NavBar = () => {
                         <Link to="/admin">Admin</Link>
                     )}
                 </nav>
-
                 {/* Links pushed to the right */}
                 <nav className="right-links">
                     {/* This is a conditional check, it checks if the variable 'user' has a value if it does render the content within the statement */}

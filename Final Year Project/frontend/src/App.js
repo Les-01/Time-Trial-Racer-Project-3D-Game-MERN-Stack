@@ -5,7 +5,6 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { useAuthorisationContext } from './hooks/useAuthorisationContext'
 // This imports the variable 'Home' from the file 'home' in the 'webPages' folder.
 import Home from './webPages/home'
-
 // This imports the variable 'Game' from the file 'game' in the 'webPages' folder.
 import Game from './webPages/game'
 // This imports the variable 'HighScoreTable' from the file 'highScoreTable' in the 'webPages' folder.
@@ -39,10 +38,6 @@ function App() {
               path="/"              
               element = {user ? <Home /> : <Navigate to ="/login" />}
             />
-
-
-
-
             {/* This is a 'Route' component which defines the specific route to the Home component.*/}
             {/* A ternary operator is used which enables access to the 'Home' component if the user is logged in otherwise the user is redirected to the 'Login' component.*/}
             <Route

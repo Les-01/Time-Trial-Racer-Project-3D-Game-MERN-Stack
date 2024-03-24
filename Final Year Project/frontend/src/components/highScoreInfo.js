@@ -11,8 +11,6 @@ const HighScoreInfo = ({highScore}) => {
     const userObject = JSON.parse(localStorage.getItem('user'));
     // This is a conditioonal statement wherein if the 'userObject' has value and the 'userObject' 'rank' property equals 'admin'.
     const isAdmin = userObject && userObject.rank === 'admin';
-
-
     // This initializes the variable 'showModal' and the function 'setShowModal' which are set to equal the React hook 'useState' which has an initial value of 'false'.
     // When the 'setShowModal' function is called and passed a value of either 'true' or 'false' that value will be assigned as the new value of the variable 'showModal'.
     const [showModal, setShowModal] = useState(false);
@@ -25,6 +23,7 @@ const HighScoreInfo = ({highScore}) => {
 
     // This is the 'deleteButton' function.
     const deleteButton = async () => {
+        // If there is no 'user' object execute the code within the IF statement.
         if (!user) {
             return
         }

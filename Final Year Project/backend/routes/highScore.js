@@ -10,16 +10,12 @@ const router = express.Router()
 // Here 'router.use(authorisation) is used which will execute the middlewareFunction 'authorisation' for all routes defined after this statement within the same router.
 router.use(authorisation)
 
-// HighScore Routes
-
-// This defines the route handling GET requests to the root URL ('/') to fetch all high scores by executing the 'getHighScores' function.
-router.get('/', getHighScores)
-
-
+// Routes
+// This defines the route handling GET requests to the root URL ('/').
+router.get('/')
 // This defines the route handling GET requests to the root URL ('/') to fetch all high scores by executing the 'getHighScores' function.
 router.get('/highScoreTable', getHighScores)
-router.get('/game', getHighScores)
-
+router.get('/game')
 // This defines the route handling POST requests to the root URL ('/') to post a new high score to the database by executing the 'createHighScore' function.
 router.post('/', createHighScore)
 // This defines the route handling DELETE requests to the URL with an ID to delete a single high score by executing the 'deleteHighScore' function. 

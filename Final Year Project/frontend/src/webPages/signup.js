@@ -16,7 +16,6 @@ const Signup = () => {
     const [password, setPassword] = useState('')
     // This initializes the variables 'error' and 'isLoading' along with the function 'signup' from 'useSignup'.
     const {signup, error, isLoading} = useSignup()
-
     // Here the asynchronous function 'submissionHandler' is defined and passed the event object (e) to handle user data input submissions via a button click.
     const submissionHandler = async (e) => {
         // This prevents the default form submission behaviour of refreshing the page.

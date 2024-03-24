@@ -15,6 +15,7 @@ RUN npm install
 
 # This copies all the source code from this directory (single dot   .) to the root directory (single dot    .) in the image.
 COPY . .
+RUN npm install
 
 # This exposes port 3000 on the container to enable a connection.
 EXPOSE 3000

@@ -7,7 +7,6 @@ import { useAuthorisationContext } from '../hooks/useAuthorisationContext'
 const UserInfo = ({userObject}) => {
     // This initialises the object 'user' and assigns 'useAuthorisationContext' as its value.  
     const {user} = useAuthorisationContext()
-
     // This initializes the variable 'showModal' and the function 'setShowModal' which are set to equal the React hook 'useState' which has an initial value of 'false'.
     // When the 'setShowModal' function is called and passed a value of either 'true' or 'false' that value will be assigned as the new value of the variable 'showModal'.
     const [showModal, setShowModal] = useState(false);

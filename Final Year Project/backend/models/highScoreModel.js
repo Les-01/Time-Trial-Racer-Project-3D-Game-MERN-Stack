@@ -9,7 +9,7 @@ const highScoreSchema = new Schema({
         required: true
     },
     score: {
-        type: Number,
+        type: String,
         required: true
     },
     user_id: {

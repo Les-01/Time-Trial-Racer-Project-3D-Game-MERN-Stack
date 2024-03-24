@@ -4,12 +4,11 @@
   --secondayColour: Black;
   --errorColour: red;
   --inactive: #333;
-  --neonGlow: #0ef;
 }
 
 /*--------------------  Main Body CSS  --------------------*/
 body {
-  background-image: url('../images/underConstruction.jpg');
+  background-image: url('../images/loopCorner.jpg');
   background-size: cover;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif
@@ -30,7 +29,7 @@ header .container {
 }
 
 header a {
-  color: var(--neonGlow);
+  color: var(--primaryColour);
   text-decoration: none;
   padding: 0px 10px;
 }
@@ -47,12 +46,6 @@ header a {
   color: white;
   font-weight: bold;
   font-size: 3em;
-}
-
-.highScoreTable {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 120px;
 }
 
 .game {
@@ -89,6 +82,7 @@ header a {
 
 h2 {
   color: var(--primaryColour);
+  text-align: center;
 }
 
 .highScore_info h4, .user_info h4 {
@@ -145,8 +139,6 @@ input {
   transition: 1s;
 }
 
-
-
 /*--------------------  Error Response CSS  --------------------*/
 div.errorMessage {
   padding: 10px;
@@ -194,7 +186,6 @@ input.error {
 }
 
 /*--------------------  Nav Bar CSS  --------------------*/
-
 nav {
   z-index: 1000;
 }
@@ -223,9 +214,13 @@ nav.right-links > div > * {
   margin-left: 10px;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
 nav button {
-  background: var(--neonGlow);
-  box-shadow: 0 0 20px var(--neonGlow);
+  background: var(--primaryColour);
+  box-shadow: 0 0 20px var(--primaryColour);
   border: 0;
   color: var(--secondayColour);
   padding: 10px;
@@ -268,79 +263,78 @@ form button {
 }
 
 /*--------------------  Hover Neon Glow CSS  --------------------*/
-
 form.signup:hover, form.login:hover {
-  border: 5px solid var(--neonGlow);
-  box-shadow: 0 0 10px var(--neonGlow), inset 0 0 10px var(--neonGlow);
+  border: 5px solid var(--primaryColour);
+  box-shadow: 0 0 10px var(--primaryColour), inset 0 0 10px var(--primaryColour);
 }
 
 form.signup:hover h2, form.login:hover h2 {
-  color: var(--neonGlow);
+  color: var(--primaryColour);
 }
 
 form.signup:hover label, form.login:hover label {
-  color: var(--neonGlow);
+  color: var(--primaryColour);
 }
 
 form.signup:hover input, form.login:hover input {
-  border: 4px solid var(--neonGlow);
-  box-shadow: 0 0 10px var(--neonGlow), inset 0 0 10px var(--neonGlow);
+  border: 4px solid var(--primaryColour);
+  box-shadow: 0 0 10px var(--primaryColour), inset 0 0 10px var(--primaryColour);
 }
 
 form.signup:hover button, form.login:hover button {
-  background: var(--neonGlow);
+  background: var(--primaryColour);
   color: var(--secondayColour);
-  box-shadow: 0 0 20px var(--neonGlow);
+  box-shadow: 0 0 20px var(--primaryColour);
 }
 
 .newEntry:hover {
-  border: 5px solid var(--neonGlow);
-  box-shadow: 0 0 10px var(--neonGlow), inset 0 0 10px var(--neonGlow);
+  border: 5px solid var(--primaryColour);
+  box-shadow: 0 0 10px var(--primaryColour), inset 0 0 10px var(--primaryColour);
 }
 
 .newEntry:hover h2 {
-  color: var(--neonGlow);
+  color: var(--primaryColour);
 }
 
 .newEntry:hover label {
-  color: var(--neonGlow);
+  color: var(--primaryColour);
 }
 
 .newEntry:hover input {
-  border: 4px solid var(--neonGlow);
-  box-shadow: 0 0 10px var(--neonGlow), inset 0 0 10px var(--neonGlow);
+  border: 4px solid var(--primaryColour);
+  box-shadow: 0 0 10px var(--primaryColour), inset 0 0 10px var(--primaryColour);
 }
 
 .newEntry:hover button {
-  background: var(--neonGlow);
+  background: var(--primaryColour);
   color: var(--secondayColour);
-  box-shadow: 0 0 20px var(--neonGlow);
+  box-shadow: 0 0 20px var(--primaryColour);
 }
 
 .highScore_info:hover, .user_info:hover {
-  border: 5px solid var(--neonGlow);
-  box-shadow: 0 0 10px var(--neonGlow), inset 0 0 10px var(--neonGlow);
+  border: 5px solid var(--primaryColour);
+  box-shadow: 0 0 10px var(--primaryColour), inset 0 0 10px var(--primaryColour);
 }
 
 .highScore_info:hover h4, .user_info:hover h4 {
-  color: var(--neonGlow);
+  color: var(--primaryColour);
 }
 
 .highScore_info:hover p, .user_info:hover p {
-  color: var(--neonGlow);
+  color: var(--primaryColour);
 }
 
 .modal:hover {
-  border: 5px solid var(--neonGlow);
-  box-shadow: 0 0 10px var(--neonGlow), inset 0 0 10px var(--neonGlow);
+  border: 5px solid var(--primaryColour);
+  box-shadow: 0 0 10px var(--primaryColour), inset 0 0 10px var(--primaryColour);
 }
 
 .modal:hover:hover h2 {
-  color: var(--neonGlow);
+  color: var(--primaryColour);
 }
 
 .modal:hover:hover label {
-  color: var(--neonGlow);
+  color: var(--primaryColour);
 }
 
 .modalCancelButton:hover {
@@ -350,14 +344,14 @@ form.signup:hover button, form.login:hover button {
 }
 
 .modalSaveButton:hover {
-  background: var(--neonGlow);
+  background: var(--primaryColour);
   color: var(--secondayColour);
-  box-shadow: 0 0 20px var(--neonGlow);
+  box-shadow: 0 0 20px var(--primaryColour);
 }
 
 .highScore_info:hover .editButton, .user_info:hover .editButton {
-  background-color: var(--neonGlow);
-  box-shadow: 0 0 20px var(--neonGlow);
+  background-color: var(--primaryColour);
+  box-shadow: 0 0 20px var(--primaryColour);
   color: var(--secondayColour);
 }
 
@@ -365,4 +359,17 @@ form.signup:hover button, form.login:hover button {
   background-color: var(--errorColour);
   box-shadow: 0 0 20px var(--errorColour);
   color: var(--secondayColour);
+}
+
+.game {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  margin: auto; 
+  overflow: hidden;
+}
+
+.game canvas {
+  display: block;
+  margin: auto;
 }

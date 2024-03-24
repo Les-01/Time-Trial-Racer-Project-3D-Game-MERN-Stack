@@ -9,10 +9,8 @@ const mongoURI = "mongodb+srv://lez:FallenOne13;@finalyearproject.mox9ikl.mongod
 
 // This requires the file 'highScore' from the 'routes' folder importing it, then sets it as the value of the variable 'highScoreRoutes'.
 const highScoreRoutes = require('./routes/highScore')
-
 // This requires the file 'users' from the 'routes' folder importing it, then sets it as the value of the variable 'userRoutes'.
 const userRoutes = require('./routes/users')
-
 // This declares the const type variable 'app' and sets its value as the express application.
 const app = express()
 // This requires the 'http' module then sets it as the value of the variable 'http'.

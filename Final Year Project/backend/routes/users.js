@@ -10,18 +10,14 @@ const router = express.Router()
 router.post('/login', userLogin)
 // This defines the route handling POST requests to the URL ('/signup') to post user signup data to signup the user up by executing the 'userSignup' function.
 router.post('/signup', userSignup)
-
-// User Routes
 // This defines the route handling GET requests to the root URL ('/admin') to fetch all users by executing the 'getUsers' function.
 router.get('/admin', getUsers)
-
 // This defines the route handling DELETE requests to the URL with an ID to delete a single user by executing the 'deleteUser' function. 
 // ':id' is used which is a route parameter where the value of 'id' can change.  
 router.delete('/admin/:id', deleteUser)
 // This defines the route handling PATCH requests to the URL with an ID to update a single user by executing the 'updateUser' function. 
 // ':id' is used which is a route parameter where the value of 'id' can change.  
 router.patch('/admin/:id', updateUser)
-// This exports the 'expressRouter' instance stored in the variable 'router' enabling it to be imprted elsewhere.
 
 // This exports the 'expressRouter' instance stored in the variable 'router' enabling it to be imprted elsewhere.
 module.exports = router

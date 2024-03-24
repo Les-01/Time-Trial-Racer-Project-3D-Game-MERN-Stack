@@ -18,7 +18,6 @@ export const useSignup = () => {
         setIsLoading(true)
         // This resets the value of 'setError' to 'null'. 
         setError(null)
-
         // Here data is 'fetched' from 'http://localhost:9000/api/user/signup' using 'await' which pauses the execution of the function until it's completed, then assigns the result as the value of the variable 'response'.
         const response = await fetch('http://localhost:9000/api/user/signup', {
             // This declares the HTTP method used for the request, here 'POST' is used to send data.

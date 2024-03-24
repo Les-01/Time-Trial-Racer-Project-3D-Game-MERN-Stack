@@ -11,9 +11,10 @@ const Game = () => {
   console.log('Game component rendered');
   // This returns the JSX that defines the structure of the Game component.
   return (
-    <div className="game">
-      <h1>Welcome To The Game Page!</h1>
-      <ThreeGame />
+    <div className="game-background">
+      <div className="game">     
+        <ThreeGame />      
+      </div>
     </div>
   );
 };

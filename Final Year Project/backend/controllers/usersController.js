@@ -15,12 +15,10 @@ const generateJSONWebToken = (_id) => {
     return JWT.sign({_id}, serverSecretString, {expiresIn: '100d'})
 }
 
-// login
 // This is the functional component 'userLogin'.
 const userLogin = async (req, res) => {
     // Here the values stored in the request body are destructured.
     const {email, password} = req.body
-
     try {
         // Here the 'User.login' method is used and passed the variables 'email' and 'password' to login the user.
         const user = await User.login(email, password)

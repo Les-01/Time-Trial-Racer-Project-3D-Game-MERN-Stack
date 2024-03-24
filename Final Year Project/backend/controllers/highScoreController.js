@@ -18,8 +18,7 @@ const getHighScores = async (req, res) => {
         // This declares the variable 'highScores'.
         let highScores;        
         // Here the 'HighScore.find({})' method is used to find all of the high scores. The '.sort' method and '-1' is used to sort the results in descending order from creation. 
-        highScores = await HighScore.find({}).sort({ createdAt: -1 });
-        
+        highScores = await HighScore.find({}).sort({ score: 1 });        
         // Here the server responds with status code '200' and the value of the variable 'highScores' is returned as a JSON object.
         res.status(200).json(highScores);
     } catch (error) {
@@ -32,23 +31,8 @@ const getHighScores = async (req, res) => {
 // This is the functional component 'createHighScore'.
 const createHighScore = async (req, res) => {
     // Here the variables 'userName' and 'score' are set to equal the value of the userName and score of the request object.
-    const {userName, score} = req.body
-    // This declares the 'emptyFormFields' variable and assigns an empty array as its value.
-    let emptyFormFields = []
-    // This is an 'IF' statement, if the form field 'userName' does NOT have a value execute the code block.
-    if(!userName) {
-        // Here '.push' is used to add the string 'userName' as an element in the 'emptyFormFields' array.
-        emptyFormFields.push('userName')
-    }
-    // This is an 'IF' statement, if the form field 'score' does NOT have a value execute the code block.
-    if(!score) {
-        // Here '.push' is used to add the string 'score' as an element in the 'emptyFormFields' array.
-        emptyFormFields.push('score')
-    }
-    if(emptyFormFields.length > 0) {
-        return res.status(400).json({error: "Please fill in all fields", emptyFormFields})
-    }     
-    // // This 'TRY' and 'CATCH' block act as the function that adds entries to the database.
+    const {userName, score} = req.body   
+    // This 'TRY' and 'CATCH' block act as the function that adds entries to the database.
     try {
         // This initialises the variable 'user_id' and assigns it the value off the 'user_id' property stored in the request object.
         const user_id = req.user._id
@@ -65,7 +49,7 @@ const createHighScore = async (req, res) => {
         res.status(200).json(highScore)
     } catch (error) {
         if (error.name === 'ValidationError') {
-            return res.status(400).json({ error: "Validation failed", details: error.errors });
+            return res.status(400).json({ error: "Validation failed555", details: error.errors });
         } else {
             console.error("Error in createHighScore:", error);
             return res.status(500).json({ error: "An error occurred while creating the high score" });

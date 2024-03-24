@@ -39,7 +39,6 @@ userSchema.statics.signup = async function (userName, email, password) {
     checkStrongPassword(password);
     // This calls the function 'checkEmailExists' which has been passed the User model in 'this' and the variable 'email'.
     await checkEmailExists.call(this, email);
-
     // Password hashing
     // Here 'bcrypt.genSalt' is used to generate a 'bcrypt salt' to generate a random string of characters which will be added to the end of a users password to add an additional layer of security. 
     // This salt is then assigned as the value of the variable 'bcryptSalt'.

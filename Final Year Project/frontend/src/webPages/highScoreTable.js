@@ -83,8 +83,8 @@ const HighScoreTable = () => {
 
     return (
         <div className = "highScoreTable">
-            {/* This renders the 'HighScoreEntryForm' component */}
-            <HighScoreEntryForm />
+            {/*  This renders the 'HighScoreEntryForm' component */}
+            {/*  <HighScoreEntryForm />  */}
             <div className = "highScores">
                 {/* This is a conditional check, it ensures the variable 'highScores' has value and is valid before rendering */}
                 {highScores && highScores.map((highScore) => (
