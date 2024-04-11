@@ -1,3 +1,6 @@
+// * @author NikLever / https://github.com/NikLever
+
+
 // Define the class SFX.
 class SFX {
 	// Constructor function for the SFX class.

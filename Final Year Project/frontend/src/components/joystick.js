@@ -1,3 +1,5 @@
+// * @author NikLever / https://github.com/NikLever
+
 // Define the class JoyStick.
 class JoyStick {
     // Constructor function that passed an options object as argument.

@@ -13,10 +13,9 @@ Project Title : Time Trial Racer - Cross Platform 3D Game
 Project Vision
 
 The gaming industry as a whole has seen exponential growth over the last decade with over 3 billion people playing video games in 2023, and an estimated global revenue of over 180 billion dollars (Morikawa, 2023). 
-However, with multiple gaming platforms being available for gamers to choose from, such as Steam (Steam Deck/PC), the Windows store (PC/Xbox), the iOS app store (Apple Device) and the Android app store (Android Device) 
-many gamers find themselves segregated from one another in a series of platform locked network pools. In these pools many players can be playing the same games developed by the same companies, but are unable to connect 
-to or compete with one another due to their individual gaming platform of choice e.g., a Steam deck player being unable to compete with an android player’s high score, or android player being unable to compete with an 
-iPhone player’s high score.
+However, with multiple gaming platforms being available for gamers to choose from, such as Steam, Epic Games, Ubisoft, and the Microsoft Store many gamers find themselves segregated from one another in a series of 
+platform locked network pools. In these pools many players can be playing the same games developed by the same companies, but are unable to connect to or compete with one another due to their individual gaming 
+platform of choice e.g., a Steam player being unable to compete with a epic games player’s high score, or Ubisoft player being unable to compete with a Microsoft Store player’s high score.
 
 This Cross-platform 3D game (working title) project will remedy this segregation issue by developing a website that is fully accessible by smart devices, whilst hosting an online based 3D video game. By bypassing the 
 traditional game platform hosting method, the website will be able to offer equal access and functionality to all devices, with no player segregation. This will enable all players to openly compete with one another 
