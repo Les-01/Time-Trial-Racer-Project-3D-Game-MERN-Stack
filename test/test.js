@@ -18,22 +18,22 @@ const jwtAuthorisationToken = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfa
 // This is the payload for the create highScore test.
 const createHighScorePayload = {
   userName: "Create HighScore Test",
-  score: 10,
+  score: "00:10",
   user_id: "65a95854668563e1b7889ddd",
   email: "alan@alderson.com"
 };
 // This is the object ID of the object in the database to be deleted in the delete highScore test.
-const deleteHighScoreId = "65ad4877749d0ac99735cc48"
+const deleteHighScoreId = "6621496c0eecfb013893f3c2"
 // This is the object ID of the object in the database to be updated in the update highScore test.
-const updateHighScoreId = "65ad440d4a0d246b72bd51fb"
+const updateHighScoreId = "660026180985a8838e742cf5"
 // This is the object ID of the object in the database to be updated in the ADMIN update user test.
 const updateUserId = "65ad3b6231029b94b2e550dc"
 // This is the object ID of the object in the database to be deleted in the ADMIN delete user test.
-const deleteUserId = "65ad4bb8d0ba1e00423defec"
+const deleteUserId = "65fae8ca23f1193363a9b7a1"
 // This is the payload for the update highScore test.
 const updateHighScorePayload = {
   userName: "Update HighScore Test",
-  score: 10,
+  score: "10:04",
   user_id: "65a95854668563e1b7889ddd",
   email: "alan@alderson.com"
 };
