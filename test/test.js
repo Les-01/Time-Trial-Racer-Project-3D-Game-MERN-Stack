@@ -1,15 +1,15 @@
 const chai = require("chai");
 const chaiHttp = require("chai-http");
-const { app } = require("../backend/server");
-const highScoreRouter = require("../backend/routes/highScore");
-const userRouter = require("../backend/routes/users");
+const { app } = require("../Final Year Project/backend/server");
+const highScoreRouter = require("../Final Year Project/backend/routes/highScore");
+const userRouter = require("../Final Year Project/backend/routes/users");
 chai.use(chaiHttp);
 // This requires 'bcrypt' then sets it as the value of the variable 'bcrypt'.
 const bcrypt = require('bcrypt')
 const sinon = require('sinon');
 // This requires the functions 'checkEmptyFields', 'checkValidEmail', 'checkStrongPassword', 'checkEmailExists', 'checkEmptyEmailAndPassword', 'checkUserExists', 'comparePasswords', from the 'validationModel' file
 // then assigns each funtion to a variable of the same name.
-const {checkEmptyFields, checkValidEmail, checkStrongPassword, checkEmailExists, checkEmptyEmailAndPassword, checkUserExists, comparePasswords} = require('../backend/models/validationModel');
+const {checkEmptyFields, checkValidEmail, checkStrongPassword, checkEmailExists, checkEmptyEmailAndPassword, checkUserExists, comparePasswords} = require('../Final Year Project/backend/models/validationModel');
 
 // -----------------------------------  Intergration Tests  ----------------------------------- //
 // This is the JSON Web Token confirming the users authorisation to access the server.
