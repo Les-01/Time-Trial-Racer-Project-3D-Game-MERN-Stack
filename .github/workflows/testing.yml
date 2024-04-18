@@ -1,0 +1,36 @@
+name: Testing
+
+on:
+  push:
+    branches:
+      - main  
+  pull_request:
+    branches:
+      - main  
+      
+jobs:
+  test:
+    runs-on: windows-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Clear old dependencies
+        run: Remove-Item -Path node_modules -Recurse -Force -ErrorAction SilentlyContinue
+
+      - name: Install dependencies and rebuild bcrypt
+        run: |
+          npm install
+        
+      - name: Run tests
+        run: npm run test
