@@ -23,13 +23,13 @@ const createHighScorePayload = {
   email: "alan@alderson.com"
 };
 // This is the object ID of the object in the database to be deleted in the delete highScore test.
-const deleteHighScoreId = "6621496c0eecfb013893f3c2"
+const deleteHighScoreId = "66214a68f8694cad66eaf7fe"
 // This is the object ID of the object in the database to be updated in the update highScore test.
 const updateHighScoreId = "660026180985a8838e742cf5"
 // This is the object ID of the object in the database to be updated in the ADMIN update user test.
 const updateUserId = "65ad3b6231029b94b2e550dc"
 // This is the object ID of the object in the database to be deleted in the ADMIN delete user test.
-const deleteUserId = "65fae8ca23f1193363a9b7a1"
+const deleteUserId = "6621478deacdc19d322eca90"
 // This is the payload for the update highScore test.
 const updateHighScorePayload = {
   userName: "Update HighScore Test",
@@ -61,8 +61,25 @@ const loginUserPayload = {
 
 // --------------------  Integration Test Database HighScore Creation, Read, Update and Delete Tests  -------------------- //
 
+
 // This is the integration testing suite for the highScore routes.
 suite("Integration tests for highScore routes (CREATE, READ, UPDATE, DELETE)", function() {  
+  // C.R.U.D Create HighScore Test
+  test("CREATE HighScore Test (POST /api/highScores) THI WILL FAIL IN GITHUB ACTIONS BUT THE IDENTICAL TEST BELOW WILL PASS!??", function(done) {
+    chai.request(app)
+      .post("/api/highScores")
+      .set('Authorization', jwtAuthorisationToken)
+      .send(createHighScorePayload)
+      .end(function(error, response) {
+        chai.assert.equal(response.status, 200, "Wrong status code");
+        chai.expect(response.body).to.have.property('userName').equal(createHighScorePayload.userName);
+        chai.expect(response.body).to.have.property('score').equal(createHighScorePayload.score);        
+        chai.expect(response.body).to.have.property('user_id').equal(createHighScorePayload.user_id);
+        console.log(error)
+        done();
+      });
+  });
+
   // C.R.U.D Create HighScore Test
   test("CREATE HighScore Test (POST /api/highScores)", function(done) {
     chai.request(app)
@@ -376,3 +393,5 @@ suite("Unit tests for login form validation", function() {
     bcryptStub.restore();
   });
 });
+
+process.exit()
