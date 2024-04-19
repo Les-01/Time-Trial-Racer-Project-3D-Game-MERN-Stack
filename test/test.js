@@ -393,5 +393,3 @@ suite("Unit tests for login form validation", function() {
     bcryptStub.restore();
   });
 });
-
-process.exit()
