@@ -1,24 +1,33 @@
-# COMP3000-Computing-Project-Leslie-Grint-10752013
+# Time Trial Racer 🏎️
 
-Final Year BSc Computer Science Project
+A 3D multiplayer time-trial racing game built using modern web technologies, featuring realistic physics, real-time leaderboards, and immersive gameplay — all within the browser.
 
-Student Name : Leslie Grint
+## Features
+- 3D game world rendered using Three.js
+- Realistic vehicle physics powered by Cannon.js
+- Real-time leaderboard updates via WebSockets
+- Secure user authentication system
+- Backend API with MongoDB for storing scores and users
+- Fully responsive UI built in React
 
-Student Number : 10752013 
+## Technologies
+- React, Node.js, Express, MongoDB
+- WebSockets (real-time communication)
+- Three.js, Cannon.js (3D & physics engines)
+- Blender (3D modelling)
 
-Supervisor : Dr Amir Aly
+## Screenshots
+![Game Screenshot](./screenshots/game.png)
 
-Project Title : Time Trial Racer - Cross Platform 3D Game
+## Setup Instructions
+1. Clone the repo
+2. `cd client` and run `npm install`
+3. `cd ../server` and run `npm install`
+4. Create a `.env` file for MongoDB URI and WebSocket configs
+5. Run `npm run dev` from root to start both client & server
 
-Project Vision
+## Status
+✅ Complete — Fully playable browser game
 
-The gaming industry as a whole has seen exponential growth over the last decade with over 3 billion people playing video games in 2023, and an estimated global revenue of over 180 billion dollars (Morikawa, 2023). 
-However, with multiple gaming platforms being available for gamers to choose from, such as Steam, Epic Games, Ubisoft, and the Microsoft Store many gamers find themselves segregated from one another in a series of 
-platform locked network pools. In these pools many players can be playing the same games developed by the same companies, but are unable to connect to or compete with one another due to their individual gaming 
-platform of choice e.g., a Steam player being unable to compete with a epic games player’s high score, or Ubisoft player being unable to compete with a Microsoft Store player’s high score.
-
-This Cross-platform 3D game (working title) project will remedy this segregation issue by developing a website that is fully accessible by smart devices, whilst hosting an online based 3D video game. By bypassing the 
-traditional game platform hosting method, the website will be able to offer equal access and functionality to all devices, with no player segregation. This will enable all players to openly compete with one another 
-without restriction. To accomplish this Html, CSS, JavaScript will be used to develop the front end of the website. PHP and SQL will be used to implement database functionality enabling users to create an account with 
-an associated high score. Three-dimensional game development will be achieved through the combination of the JavaScript API WebGL (Web Graphics Library), Three.js, Cannon.js (3D Physics library) and Node.js. Blender 
-will be used to create 3D objects and the game environment.
+## License
+MIT
